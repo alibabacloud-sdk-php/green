@@ -9,10 +9,10 @@ use AlibabaCloud\VersionResolverTrait;
  *
  * @package   AlibabaCloud\Green
  *
- * @method V20170823\GreenApiResolver v20170823()
- * @method V20180509\GreenApiResolver v20180509()
+ * @method static V20170823\GreenApiResolver v20170823()
+ * @method static V20180509\GreenApiResolver v20180509()
  */
-class Green
+class GreenVersion
 {
     use VersionResolverTrait;
 }
