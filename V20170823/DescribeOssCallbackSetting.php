@@ -5,12 +5,11 @@ namespace AlibabaCloud\Green\V20170823;
 use AlibabaCloud\Rpc;
 
 /**
- * Api DescribeOssIncrementCheckSetting
+ * Api DescribeOssCallbackSetting
  *
  * @method string getSourceIp()
- * @method string getLang()
  */
-class DescribeOssIncrementCheckSetting extends Rpc
+class DescribeOssCallbackSetting extends Rpc
 {
     public $product = 'Green';
 
@@ -29,19 +28,6 @@ class DescribeOssIncrementCheckSetting extends Rpc
     {
         $this->data['SourceIp'] = $sourceIp;
         $this->options['query']['SourceIp'] = $sourceIp;
-
-        return $this;
-    }
-
-    /**
-     * @param string $lang
-     *
-     * @return $this
-     */
-    public function withLang($lang)
-    {
-        $this->data['Lang'] = $lang;
-        $this->options['query']['Lang'] = $lang;
 
         return $this;
     }
